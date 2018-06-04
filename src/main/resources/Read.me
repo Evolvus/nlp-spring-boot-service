@@ -1,0 +1,14 @@
+SAMPLE JSON STRING REQUEST
+POST /api/train HTTP/1.1
+Host: 192.168.1.17:6200
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: bfdee0b5-8462-e7b9-12a2-47293b9c3727
+
+{
+	"intentName":"vote",
+"hasSlots":true,
+"fulfilled":true,
+"utterances":["\u003cSTART:age\u003e 21 \u003cEND\u003eyear old vote?","\u003cSTART:age\u003e 21 \u003cEND\u003eyr old vote?","\u003cSTART:age\u003e 21 \u003cEND\u003eold vote?","my age \u003cSTART:age\u003e 18 \u003cEND\u003e can i vote?","I am \u003cSTART:age\u003e 23 \u003cEND\u003e year old,can I vote?","Can I vote?","Do you have rights to vote"],
+"slots":[{"name":"age","type":"number"}]
+}

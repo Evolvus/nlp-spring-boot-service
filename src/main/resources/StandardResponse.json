@@ -1,0 +1,212 @@
+#Standard Response.
+#Greet Intent 
+{
+	"action": {
+		"intentName": "Greet",
+		"hasSlots": false,
+		"fulfilled": false,
+		"utterances": [
+			"hi",
+			"hello",
+			"hey",
+			"launch bot",
+			"launch diana",
+			"open",
+			"talk to bot",
+			"talk to diana",
+			"What can you do?",
+			"what you can do?",
+			"can you help  me",
+			"help me",
+			"help"
+		]
+	},
+	"type": "SIMPLE",
+	"speechText": [
+		"Hi,I am your Finacle Assistant! How may I help you ? I can do things like guiding you through Finacle transactions, Giving you Finacle menu names, Showing forms etc., Just click on any of the following or type, How do I perform Account Freeze? and I will walk you through how it needs to be done",
+		"Hello,How can I help You?"
+	],
+	"displayText": [
+		"Hi,I am your Finacle Assistant! How may I help you ? I can do things like guiding you through Finacle transactions, Giving you Finacle menu names, Showing forms etc., Just click on any of the following or type, How do I perform Account Freeze? and I will walk you through how it needs to be done",
+		"Hello,How can I help you"
+	],
+	"buttons": [
+		{
+			"name": "Account Closure",
+			"value": "Account Closure",
+			"buttonId": "btnAcctClosureId"
+		},
+		{
+			"name": "Freez Unfreez Account",
+			"value": "Freez Unfreez Account",
+			"buttonId": "btnFreezUnfreezAcctId"
+		},
+		{
+			"name": "Issue Cheque Book",
+			"value": "Issue Cheque Book",
+			"buttonId": "btnIssueCheqAcctId"
+		},
+		{
+			"name": "Lien Maintenance",
+			"value": "Lien Maintenance",
+			"buttonId": "btnLienMaintId"
+		},
+		{
+			"name": "Loan Interest Update",
+			"value": "Loan Interest Update",
+			"buttonId": "btnLoanIntrstId"
+		},
+		{
+			"name": "Stop Payment",
+			"value": "Stop Payment",
+			"buttonId": "btnStopPaymenttId"
+		},
+		{
+			"name": "HR Recruitment",
+			"value": "HR Recruitment",
+			"buttonId": "btnHrRecrttId"
+		}
+	]
+}
+
+#First Record
+{
+	"action": {
+		"intentName": "AccountClosure",
+		"hasSlots": false,
+		"fulfilled": false,
+		"utterances": [
+			"help me to close account",
+			"account close",
+			"account closure",
+			"acct  closure",
+			"accnt closure",
+			"accnt close",
+			"close account",
+			"how to close  an account",
+			"how to close account",
+			"how to  close accnt",
+			"close accnt",
+			"close acct",
+			"how do i close account",
+			"steps to close the account",
+			"closing account steps"
+		]
+	},
+	"type": "RICH",
+	"speechText": [
+		"Here are the below steps to close an account",
+		"You can follow following steps to close an account",
+		"Please check following steps"
+	],
+	"displayText": [
+		"Here are the below steps to close an account",
+		"You can follow following steps to close an account",
+		"Please check following steps"
+	],
+	"buttons": [
+		{
+			"name": "Account Status",
+			"value": "Account Status",
+			"buttonId": "btnAcctStatusId"
+		},
+		{
+			"name": "Freez Status",
+			"value": "Freez Status",
+			"buttonId": "btnFreezStatusId"
+		},
+		{
+			"name": "Lien on the account",
+			"value": "Lien on the account",
+			"buttonId": "btnLienAcctId"
+		},
+		{
+			"name": "Cheques  in clearing",
+			"value": "Cheques in clearing",
+			"buttonId": "btnCheqInClrId"
+		},
+		{
+			"name": "Calculate Interest",
+			"value": "Calculate Interest",
+			"buttonId": "btnCalInterestId"
+		},
+		{
+			"name": "Collect Charges if any",
+			"value": "Collect charges if any",
+			"buttonId": "btncollChargeId"
+		},
+		{
+			"name": "Destory the chequebook",
+			"value": "Destory the checquebook",
+			"buttonId": "btnDestoryChqBookId"
+		},
+		{
+			"name": "Linked accounts",
+			"value": "Linked accounts",
+			"buttonId": "btnLinkedAcctsId"
+		}
+	]
+}
+#Second Record
+{
+  "action":{
+    "intentName":"AccountStatus",
+    "hasSlots":false,
+    "fulfilled":false,
+    "utterances":[
+      "HACM",
+      "guide through account status check",
+      "account status",
+      "account status check",
+      "acct status",
+      "accnt status",
+      "accont  status",
+      "help to check account status",
+      "help me to check account status",
+      "help to check accnt status",
+      "help to check accont status",
+      "help me to check accnt status",
+      "how to check account status",
+      "how account status",
+      "how i can check account status",
+      "how can i check account status"
+      ]
+	},
+	    "type":"RICH",
+      "speechText":["To close an account,initial checks needs to be performed.<br>1.The account status needs to be active for closure.<br>2.Lien should not me marked.<br>3.The account should not have any linked loan accounts.<br>4.The account should not have any cheques in clearing.Further Actionable steps are:"],
+      "displayText":[
+        "Step 1.Invoke 'HACM'." ,
+        "Step 2.Function Inquire.",
+        "Step 3.Account  ID: Enter the account number.",
+        "Step 4.Click on 'Go'.",
+        "Step 5.Click on 'Schme' tab.",
+        "Step 6.Account status: This field informs the status of the account. If Active, proceed with the further steps.If dormant or inactive, change the status to active and proceed",
+        "Step 7.Click on 'Ok'."
+        ],
+      "images":[
+          {
+           "url":"https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_1_1.png",
+           "alt":"Account Closure Help 001"
+          },
+          {
+           "url":"https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_1_2.png",
+           "alt":"Account Closure Help 002"
+          },
+          {
+           "url":"https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_1_3.png",
+           "alt":"Account Closure Help 003"
+          }
+        ],
+      "buttons":[
+        {
+        "name":"Freez Status",
+        "value":"Freez Status",
+        "buttonId":"btnFreezStatusId"
+        },
+        {
+        "name":"Lien on the account",
+        "value":"Lien on the account",
+        "buttonId":"btnLienAcctId"
+        }
+      ]
+}
