@@ -1,12 +1,14 @@
 package com.evolvus.opennlp.demo.processor;
 
 import java.util.List;
+import java.util.Random;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -20,6 +22,7 @@ import com.evolvus.opennlp.demo.util.NlpResponse;
 
 @RestController
 @RequestMapping("/api/v0.1")
+@CrossOrigin(allowCredentials = "true")
 public class IntentProcessor {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(IntentProcessor.class);
@@ -27,14 +30,17 @@ public class IntentProcessor {
 	@Autowired
 	private NlpTrainer intentExtractor;
 
-	private String[] _DEFAULT_RESPONSE = { "Sorry! Can you repeat that", "I cannot understand that" };
+	private String[] _DEFAULT_RESPONSE = { "Sorry! Can you repeat that", "I cannot understand that", "One more time?",
+			"I missed that!" };
 
 	@Autowired
 	private StandardResponseRepository stdRespRepository;
 
+	Random random;
+
 	@RequestMapping(value = "/diana", method = RequestMethod.POST)
 	public ResponseEntity<NlpResponse> process(@RequestParam("query") String inputText) {
-
+		random = new Random();
 		if (LOGGER.isDebugEnabled()) {
 			LOGGER.debug("Start process query:{}", inputText);
 		}
@@ -49,10 +55,12 @@ public class IntentProcessor {
 			List<StandardResponse> stdResponses = stdRespRepository.findByActionIntentName(action);
 			if (stdResponses.isEmpty()) {
 				resp.setStatus(HttpStatus.NOT_FOUND);
-				resp.setBody(_DEFAULT_RESPONSE[0]);
+				resp.setBody(_DEFAULT_RESPONSE[random.nextInt(_DEFAULT_RESPONSE.length)]);
 			} else {
 				resp.setBody(stdResponses.get(0));
 			}
+		} else {
+			resp.setBody(_DEFAULT_RESPONSE[random.nextInt(_DEFAULT_RESPONSE.length)]);
 		}
 		if (LOGGER.isDebugEnabled()) {
 			LOGGER.debug("End process:{}", resp);

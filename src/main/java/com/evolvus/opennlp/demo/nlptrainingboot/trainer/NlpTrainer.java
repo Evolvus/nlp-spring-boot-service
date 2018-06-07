@@ -3,7 +3,6 @@ package com.evolvus.opennlp.demo.nlptrainingboot.trainer;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -31,7 +30,9 @@ import opennlp.tools.util.featuregen.AdaptiveFeatureGenerator;
 public class NlpTrainer {
 
 	@Setter
+	@Getter
 	private DocumentCategorizerME categorizer;
+	
 	@Setter
 	@Getter
 	private NameFinderME[] nameFinderMEs;
@@ -41,6 +42,7 @@ public class NlpTrainer {
 	}
 
 	// Get Intent and Slots value
+	@SuppressWarnings("unchecked")
 	public Intent test(String s) {
 		double[] outcome = categorizer.categorize(s);
 
@@ -50,18 +52,22 @@ public class NlpTrainer {
 		for (NameFinderME nameFinderME : nameFinderMEs) {
 			Span[] spans = nameFinderME.find(tokens);
 			String[] names = Span.spansToStrings(spans, tokens);
-			Arrays.asList(names).forEach(System.out::println);
 			for (int i = 0; i < spans.length; i++) {
 				obj.put(spans[i].getType(), names[i]);
 			}
 		}
 
-		Intent intent = new Intent(categorizer.getBestCategory(outcome), obj, true, false, null, null);
+		//Intent intent = null;
+		// OptionalDouble max = DoubleStream.of(outcome).max();
+		// if (max.isPresent() && max.getAsDouble() * 100.00 > 90) {
+		// double[] val = { max.getAsDouble() };
+		Intent  intent = new Intent(categorizer.getBestCategory(outcome), obj, true, false, null, null);
 		// pass the intent name to db and get the slot status
 		if (!obj.isEmpty()) {
 			intent.setHasSlots(true);
 			intent.setFulfilled(true);
 		}
+		// }
 
 		return intent;
 	}
@@ -80,6 +86,7 @@ public class NlpTrainer {
 
 			List<ObjectStream<DocumentSample>> categoryStreams = new ArrayList<ObjectStream<DocumentSample>>();
 			for (File trainingFile : trainingDirectory.listFiles()) {
+				System.out.println("Training file :"+trainingFile.getAbsolutePath());
 				String intent = trainingFile.getName().replaceFirst("[.][^.]+$", "");
 				ObjectStream<String> lineStream = new PlainTextByLineStream(new FileInputStream(trainingFile), "UTF-8");
 				ObjectStream<DocumentSample> documentSampleStream = new IntentDocumentSampleStream(intent, lineStream);
@@ -121,7 +128,8 @@ public class NlpTrainer {
 
 			System.out.println("Training complete. Ready.");
 		} catch (Exception excep) {
-
+			excep.printStackTrace();
+			System.err.println(excep);
 		}
 	}
 

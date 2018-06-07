@@ -1,0 +1,3 @@
+Freeze status
+check freeze status
+check unfreeze status

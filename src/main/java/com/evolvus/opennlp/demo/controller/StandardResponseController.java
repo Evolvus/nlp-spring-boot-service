@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.evolvus.opennlp.demo.nlptrainingboot.trainer.NlpTrainer;
 import com.evolvus.opennlp.demo.repo.StandardResponseRepository;
 import com.evolvus.opennlp.demo.response.StandardResponse;
 import com.evolvus.opennlp.demo.util.NlpResponse;
@@ -23,6 +23,7 @@ import com.google.gson.Gson;
 
 @RestController
 @RequestMapping("/api/v0.1")
+@CrossOrigin(allowCredentials = "true")
 public class StandardResponseController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(StandardResponseController.class);
@@ -84,7 +85,7 @@ public class StandardResponseController {
 				StandardResponse updateStdResponse = stdResponse.get();
 				updateStdResponse = gson.fromJson(requestBody, StandardResponse.class);
 				updateStdResponse.setId(stdResponse.get().getId());
-				//Training updated utterances
+				// Training updated utterances
 				trainerDataCtrl.trainData(gson.toJson(updateStdResponse.getAction()));
 				updateStdResponse = repository.save(updateStdResponse);
 				response.setBody(updateStdResponse);

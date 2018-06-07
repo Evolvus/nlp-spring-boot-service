@@ -1,0 +1,5 @@
+<START:age> 21 <END>year old vote?
+<START:age> 21 <END>yr old vote?
+<START:age> 21 <END>old vote?
+my age <START:age> 18 <END> can i vote?
+I am <START:age> 23 <END> year old,can I vote?
