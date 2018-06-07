@@ -86,7 +86,7 @@ public class NlpTrainer {
 
 			List<ObjectStream<DocumentSample>> categoryStreams = new ArrayList<ObjectStream<DocumentSample>>();
 			for (File trainingFile : trainingDirectory.listFiles()) {
-				System.out.println("Training file :"+trainingFile.getAbsolutePath());
+				System.err.println("Training file :"+trainingFile.getAbsolutePath().contains("'"));
 				String intent = trainingFile.getName().replaceFirst("[.][^.]+$", "");
 				ObjectStream<String> lineStream = new PlainTextByLineStream(new FileInputStream(trainingFile), "UTF-8");
 				ObjectStream<DocumentSample> documentSampleStream = new IntentDocumentSampleStream(intent, lineStream);
