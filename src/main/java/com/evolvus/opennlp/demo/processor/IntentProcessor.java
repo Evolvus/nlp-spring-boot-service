@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -47,6 +48,38 @@ public class IntentProcessor {
 
 		NlpResponse resp = new NlpResponse(HttpStatus.OK, null);
 		Intent intent = this.intentExtractor.test(inputText);
+
+		if (intent != null) {
+
+			String action = intent.getIntentName();
+
+			List<StandardResponse> stdResponses = stdRespRepository.findByActionIntentName(action);
+			if (stdResponses.isEmpty()) {
+				resp.setStatus(HttpStatus.NOT_FOUND);
+				resp.setBody(_DEFAULT_RESPONSE[random.nextInt(_DEFAULT_RESPONSE.length)]);
+			} else {
+				resp.setBody(stdResponses.get(0));
+			}
+		} else {
+			resp.setBody(_DEFAULT_RESPONSE[random.nextInt(_DEFAULT_RESPONSE.length)]);
+		}
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("End process:{}", resp);
+		}
+		return new ResponseEntity<NlpResponse>(resp, resp.getStatus());
+
+	}
+
+	@RequestMapping(value = "/webhook", method = RequestMethod.POST)
+	public ResponseEntity<NlpResponse> webhook(@RequestBody String input) {
+		random = new Random();
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("Start webhook query:{}", input);
+		}
+		System.out.println("/api/v0.1/webhook:" + input);
+
+		NlpResponse resp = new NlpResponse(HttpStatus.OK, null);
+		Intent intent = this.intentExtractor.test(input);
 
 		if (intent != null) {
 
