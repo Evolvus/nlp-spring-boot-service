@@ -4,11 +4,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
-
-import com.evolvus.opennlp.demo.nlptrainingboot.trainer.NlpTrainer;
 
 @SpringBootApplication
 @ComponentScan("com.evolvus")
@@ -29,8 +26,8 @@ public class NlpTrainingBootApplication {
 		SpringApplication.run(NlpTrainingBootApplication.class, args);
 	}
 
-	@Bean(name = "nlpTrainer")
-	public NlpTrainer getTrainer() {
-		return new NlpTrainer(trainingDataPath, slots, language);
-	}
+	// @Bean(name = "nlpTrainer")
+	// public NlpTrainer getTrainer() {
+	// return new NlpTrainer();
+	// }
 }

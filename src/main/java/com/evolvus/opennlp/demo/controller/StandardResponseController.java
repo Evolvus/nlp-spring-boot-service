@@ -50,6 +50,8 @@ public class StandardResponseController {
 		NlpResponse response = new NlpResponse(HttpStatus.CREATED, "Data created successfully.");
 		try {
 			StandardResponse stdResponse = gson.fromJson(requestBody, StandardResponse.class);
+			stdResponse.getAction()
+					.setIntentName(stdResponse.getAction().getIntentName().replaceFirst("[.][^.]+$", ""));
 			trainerDataCtrl.trainData(gson.toJson(stdResponse.getAction()));
 			stdResponse = repository.save(stdResponse);
 			response.setBody(stdResponse);

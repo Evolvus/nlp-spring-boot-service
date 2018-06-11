@@ -1,11 +1,11 @@
 [
 	{
-		"_id" : ObjectId("5b18eb3e553063381c0f5106"),
-		"action" : {
-			"intentName" : "Welcome",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"id": ObjectId("5b18eb3e553063381c0f5106"),
+		"action": {
+			"intentName": "Welcome",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"hi",
 				"hello",
 				"hi diana",
@@ -15,159 +15,159 @@
 				"open diana",
 				"launch diana"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"'Hi, I am your Finacle Assistant! How may I help you ? I can do things like guiding you through Finacle transactions, Giving you Finacle menu names, Showing forms etc., Just click on any of the following or type, How do I perform Account Freeze? and I will walk you through how it needs to be done'"
 		],
-		"displayText" : [
+		"displayText": [
 			"'Hi, I am your Finacle Assistant! How may I help you ? I can do things like guiding you through Finacle transactions, Giving you Finacle menu names, Showing forms etc., Just click on any of the following or type, How do I perform Account Freeze? and I will walk you through how it needs to be done'"
 		],
-		"type" : "RICH",
-		"images" : [ ],
-		"buttons" : [
+		"type": "RICH",
+		"images": [],
+		"buttons": [
 			{
-				"name" : "Account Closure",
-				"value" : "Account Closure"
+				"name": "Account Closure",
+				"value": "Account Closure"
 			},
 			{
-				"name" : "Freeze Unfreeze Account",
-				"value" : "Freeze Unfreeze Account"
+				"name": "Freeze Unfreeze Account",
+				"value": "Freeze Unfreeze Account"
 			},
 			{
-				"name" : "Issue Cheque Book",
-				"value" : "Issue Cheque Book"
+				"name": "Issue Cheque Book",
+				"value": "Issue Cheque Book"
 			},
 			{
-				"name" : "Lien Maintenance",
-				"value" : "Lien Maintenance"
+				"name": "Lien Maintenance",
+				"value": "Lien Maintenance"
 			},
 			{
-				"name" : "Loan Interest Update",
-				"value" : "Loan Interest Update"
+				"name": "Loan Interest Update",
+				"value": "Loan Interest Update"
 			},
 			{
-				"name" : "Stop Payment",
-				"value" : "Stop Payment"
+				"name": "Stop Payment",
+				"value": "Stop Payment"
 			}
 		],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18ebaa553063381c0f5107"),
-		"action" : {
-			"intentName" : "Exit",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18ebaa553063381c0f5107"),
+		"action": {
+			"intentName": "Exit",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"close",
 				"exit"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Thanks for using our services. Have a great day."
 		],
-		"displayText" : [
+		"displayText": [
 			"Thanks for using our services. Have a great day."
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18ec0b553063381c0f5108"),
-		"action" : {
-			"intentName" : "Impolite",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18ec0b553063381c0f5108"),
+		"action": {
+			"intentName": "Impolite",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"what the hell",
 				"what the heck",
 				"idiot",
 				"stupid",
 				"go to hell"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"That is not a polite language to use. Please try again."
 		],
-		"displayText" : [
+		"displayText": [
 			"That is not a polite language to use. Please try again."
 		],
-		"type" : "RICH",
-		"images" : [ ],
-		"buttons" : [
+		"type": "RICH",
+		"images": [],
+		"buttons": [
 			{
-				"name" : "Main Menu",
-				"value" : "Main Menu"
+				"name": "Main Menu",
+				"value": "Main Menu"
 			},
 			{
-				"name" : "Exit",
-				"value" : "Exit"
+				"name": "Exit",
+				"value": "Exit"
 			}
 		],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18ecfa553063381c0f5109"),
-		"action" : {
-			"intentName" : "Main_Menu",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18ecfa553063381c0f5109"),
+		"action": {
+			"intentName": "Main_Menu",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"main menu",
 				"menu",
 				"let's start again",
 				"start again"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Menu"
 		],
-		"displayText" : [
+		"displayText": [
 			"Menu"
 		],
-		"type" : "RICH",
-		"images" : [ ],
-		"buttons" : [
+		"type": "RICH",
+		"images": [],
+		"buttons": [
 			{
-				"name" : "Account Closure",
-				"value" : "Account Closure"
+				"name": "Account Closure",
+				"value": "Account Closure"
 			},
 			{
-				"name" : "Freeze Unfreeze Account",
-				"value" : "Freeze Unfreeze Account"
+				"name": "Freeze Unfreeze Account",
+				"value": "Freeze Unfreeze Account"
 			},
 			{
-				"name" : "Issue Cheque Book",
-				"value" : "Issue Cheque Book"
+				"name": "Issue Cheque Book",
+				"value": "Issue Cheque Book"
 			},
 			{
-				"name" : "Lien Maintenance",
-				"value" : "Lien Maintenance"
+				"name": "Lien Maintenance",
+				"value": "Lien Maintenance"
 			},
 			{
-				"name" : "Loan Interest Update",
-				"value" : "Loan Interest Update"
+				"name": "Loan Interest Update",
+				"value": "Loan Interest Update"
 			},
 			{
-				"name" : "Stop Payment",
-				"value" : "Stop Payment"
+				"name": "Stop Payment",
+				"value": "Stop Payment"
 			}
 		],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18eee0553063381c0f510a"),
-		"action" : {
-			"intentName" : "Account_Closure",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18eee0553063381c0f510a"),
+		"action": {
+			"intentName": "Account_Closure",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"close account",
 				"how do i close my account",
 				"closure of account",
@@ -176,9 +176,9 @@
 				"account close",
 				"steps to close the account"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"'Here are the below steps to close an account'",
 			"'To close an account,initial checks needs to be performed.'",
 			"'1.The account status needs to be active for closure.",
@@ -186,7 +186,7 @@
 			"'3.The account should not have any linked loan accounts.",
 			"'4.The account should not have any cheques in clearing."
 		],
-		"displayText" : [
+		"displayText": [
 			"'Here are the below steps to close an account'",
 			"'To close an account,initial checks needs to be performed.'",
 			"'1.The account status needs to be active for closure.",
@@ -194,51 +194,51 @@
 			"'3.The account should not have any linked loan accounts.",
 			"'4.The account should not have any cheques in clearing."
 		],
-		"type" : "RICH",
-		"images" : [ ],
-		"buttons" : [
+		"type": "RICH",
+		"images": [],
+		"buttons": [
 			{
-				"name" : "Account Status",
-				"value" : "Account Status"
+				"name": "Account Status",
+				"value": "Account Status"
 			},
 			{
-				"name" : "Freeze status",
-				"value" : "Freeze status"
+				"name": "Freeze status",
+				"value": "Freeze status"
 			},
 			{
-				"name" : "Lien on the account",
-				"value" : "Lien on the account"
+				"name": "Lien on the account",
+				"value": "Lien on the account"
 			},
 			{
-				"name" : "Cheques in clearing",
-				"value" : "Cheques in clearing"
+				"name": "Cheques in clearing",
+				"value": "Cheques in clearing"
 			},
 			{
-				"name" : "Calculate Interest",
-				"value" : "Calculate Interest"
+				"name": "Calculate Interest",
+				"value": "Calculate Interest"
 			},
 			{
-				"name" : "Collect charges if any",
-				"value" : "Collect charges if any"
+				"name": "Collect charges if any",
+				"value": "Collect charges if any"
 			},
 			{
-				"name" : "Destroy the chequebook",
-				"value" : "Destroy the chequebook"
+				"name": "Destroy the chequebook",
+				"value": "Destroy the chequebook"
 			},
 			{
-				"name" : "Linked accounts",
-				"value" : "Linked accounts"
+				"name": "Linked accounts",
+				"value": "Linked accounts"
 			}
 		],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18f07a553063381c0f510b"),
-		"action" : {
-			"intentName" : "Account_Status",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18f07a553063381c0f510b"),
+		"action": {
+			"intentName": "Account_Status",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"help to check account status",
 				"guide through account status check",
 				"account status",
@@ -246,9 +246,9 @@
 				"how to check account status",
 				"check account status"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Step 1.Invoke 'HACM'.",
 			"Step 2.Function Inquire.",
 			"Step 3.Account  ID: Enter the account number.",
@@ -257,7 +257,7 @@
 			"Step 6.Account status: This field informs the status of the account.  If Active, proceed with the further steps.\\If dormant or inactive, change the status to active and proceed.",
 			"Step 7.Click on 'Ok'."
 		],
-		"displayText" : [
+		"displayText": [
 			"",
 			"Step 1.Invoke 'HACM'.",
 			"Step 2.Function Inquire.",
@@ -267,42 +267,42 @@
 			"Step 6.Account status: This field informs the status of the account.  If Active, proceed with the further steps.\\If dormant or inactive, change the status to active and proceed.",
 			"Step 7.Click on 'Ok'."
 		],
-		"type" : "RICH",
-		"images" : [
+		"type": "RICH",
+		"images": [
 			{
-				"url" : "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_1_1.png",
-				"alt" : "account_closure_1_1"
+				"url": "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_1_1.png",
+				"alt": "account_closure_1_1"
 			},
 			{
-				"url" : "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_1_2.png",
-				"alt" : "account_closure_1_2"
+				"url": "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_1_2.png",
+				"alt": "account_closure_1_2"
 			},
 			{
-				"url" : "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_1_3.png",
-				"alt" : "account_closure_1_3"
+				"url": "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_1_3.png",
+				"alt": "account_closure_1_3"
 			}
 		],
-		"buttons" : [
+		"buttons": [
 			{
-				"name" : "Freeze status",
-				"value" : "Freeze status"
+				"name": "Freeze status",
+				"value": "Freeze status"
 			}
 		],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18f127553063381c0f510c"),
-		"action" : {
-			"intentName" : "Lien_on_the_account",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18f127553063381c0f510c"),
+		"action": {
+			"intentName": "Lien_on_the_account",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"how to check lien on account",
 				"check for lien on account"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"'For lien on the account,see below screen shot & following steps,'",
 			"'Step 1.Invoke 'HALM''",
 			"'Step 2.Function Inquire'",
@@ -310,7 +310,7 @@
 			"'Step 4.Click on 'Go.'",
 			"'Step 5.If a Lien is marked, remove the lien from the account and proceed.'"
 		],
-		"displayText" : [
+		"displayText": [
 			"'For lien on the account,see below screen shot & following steps,'",
 			"'Step 1.Invoke 'HALM''",
 			"'Step 2.Function Inquire'",
@@ -318,34 +318,34 @@
 			"'Step 4.Click on 'Go.'",
 			"'Step 5.If a Lien is marked, remove the lien from the account and proceed.'"
 		],
-		"type" : "RICH",
-		"images" : [
+		"type": "RICH",
+		"images": [
 			{
-				"url" : "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_3_1.png",
-				"alt" : "account_closure_3_1"
+				"url": "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_3_1.png",
+				"alt": "account_closure_3_1"
 			}
 		],
-		"buttons" : [
+		"buttons": [
 			{
-				"name" : "Cheques in clearing",
-				"value" : "Cheques in clearing"
+				"name": "Cheques in clearing",
+				"value": "Cheques in clearing"
 			}
 		],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18f1d4553063381c0f510d"),
-		"action" : {
-			"intentName" : "Freeze_status",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18f1d4553063381c0f510d"),
+		"action": {
+			"intentName": "Freeze_status",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"check freeze status",
 				"check unfreeze status"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"'To check freeze or unfreeze status,see below screen shot & following steps'",
 			"'Step 1.Invoke 'HAFSM'",
 			"'Step 2.Function Inquire",
@@ -353,7 +353,7 @@
 			"'Step 4.Click on 'Go'.",
 			"'Step 5.If Frozen, check for the reason. If it’s a customer induced freeze, change it into active. If it’s a bank induced freeze, reject the request of closing the account."
 		],
-		"displayText" : [
+		"displayText": [
 			"'To check freeze or unfreeze status,see below screen shot & following steps'",
 			"'Step 1.Invoke 'HAFSM'",
 			"'Step 2.Function Inquire",
@@ -361,37 +361,37 @@
 			"'Step 4.Click on 'Go'.",
 			"'Step 5.If Frozen, check for the reason. If it’s a customer induced freeze, change it into active. If it’s a bank induced freeze, reject the request of closing the account."
 		],
-		"type" : "RICH",
-		"images" : [
+		"type": "RICH",
+		"images": [
 			{
-				"url" : "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_2_1.png",
-				"alt" : "account_closure_2_1"
+				"url": "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_2_1.png",
+				"alt": "account_closure_2_1"
 			}
 		],
-		"buttons" : [
+		"buttons": [
 			{
-				"name" : "Lien on the account",
-				"value" : "Lien on the account"
+				"name": "Lien on the account",
+				"value": "Lien on the account"
 			}
 		],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18f273553063381c0f510e"),
-		"action" : {
-			"intentName" : "Cheques_in_clearing",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18f273553063381c0f510e"),
+		"action": {
+			"intentName": "Cheques_in_clearing",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"check for cheques in clearing",
 				"clearing cheque",
 				"cheque clearing",
 				"check cheque clearing",
 				"clearing"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"'For cheque clearing,see below screen shot & following steps,'",
 			"'Step 1.Invoke 'HOCI/HICI'",
 			"'Step 2.Function Inquire.'",
@@ -399,7 +399,7 @@
 			"'Step 4.Click on 'Go', view the details.'",
 			"'Step 5.If cheques are available for clearing, process the cheques.'"
 		],
-		"displayText" : [
+		"displayText": [
 			"'For cheque clearing,see below screen shot & following steps,'",
 			"'Step 1.Invoke 'HOCI/HICI'",
 			"'Step 2.Function Inquire.'",
@@ -407,40 +407,40 @@
 			"'Step 4.Click on 'Go', view the details.'",
 			"'Step 5.If cheques are available for clearing, process the cheques.'"
 		],
-		"type" : "RICH",
-		"images" : [
+		"type": "RICH",
+		"images": [
 			{
-				"url" : "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_4_1.png",
-				"alt" : "account_closure_4_1"
+				"url": "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_4_1.png",
+				"alt": "account_closure_4_1"
 			},
 			{
-				"url" : "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_4_2.png",
-				"alt" : "account_closure_4_2"
+				"url": "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_4_2.png",
+				"alt": "account_closure_4_2"
 			}
 		],
-		"buttons" : [
+		"buttons": [
 			{
-				"name" : "Calculate Interest",
-				"value" : "Calculate Interest"
+				"name": "Calculate Interest",
+				"value": "Calculate Interest"
 			}
 		],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18f31b553063381c0f510f"),
-		"action" : {
-			"intentName" : "Collect_charges_if_any",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18f31b553063381c0f510f"),
+		"action": {
+			"intentName": "Collect_charges_if_any",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"collect charges if any",
 				"collect charges",
 				"charges collect",
 				"charges"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"'For collecting charges,see below screen shot & following steps,'",
 			"'Step 1.Invoke 'HCACC'",
 			"'Step 2.Function: Collect.'",
@@ -449,7 +449,7 @@
 			"'Step 5.This will list all the charges to be collected.'",
 			"'Step 6.Click on 'Submit.'"
 		],
-		"displayText" : [
+		"displayText": [
 			"'For collecting charges,see below screen shot & following steps,'",
 			"'Step 1.Invoke 'HCACC'",
 			"'Step 2.Function: Collect.'",
@@ -458,28 +458,28 @@
 			"'Step 5.This will list all the charges to be collected.'",
 			"'Step 6.Click on 'Submit.'"
 		],
-		"type" : "RICH",
-		"images" : [
+		"type": "RICH",
+		"images": [
 			{
-				"url" : "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_6_1.png",
-				"alt" : "account_closure_6_1"
+				"url": "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_6_1.png",
+				"alt": "account_closure_6_1"
 			}
 		],
-		"buttons" : [
+		"buttons": [
 			{
-				"name" : "Destroy the chequebook",
-				"value" : "Destroy the chequebook"
+				"name": "Destroy the chequebook",
+				"value": "Destroy the chequebook"
 			}
 		],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18f3b6553063381c0f5110"),
-		"action" : {
-			"intentName" : "Calculate_Interest",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18f3b6553063381c0f5110"),
+		"action": {
+			"intentName": "Calculate_Interest",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"calculate",
 				"calculate interest",
 				"cal",
@@ -491,9 +491,9 @@
 				"cal and apply interest",
 				"cal & apply interest"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"'For Calculation and applying interest rates,see below screen shot & following steps,'",
 			"'Step 1.Invoke 'HACINT'",
 			"'Step 2.Report To: Enter the name of the manger to address the report.'",
@@ -501,7 +501,7 @@
 			"'Step 4.To Account ID: select the account ID.'",
 			"'Step 5.Click on 'Submit.'"
 		],
-		"displayText" : [
+		"displayText": [
 			"'For Calculation and applying interest rates,see below screen shot & following steps,'",
 			"'Step 1.Invoke 'HACINT'",
 			"'Step 2.Report To: Enter the name of the manger to address the report.'",
@@ -509,36 +509,36 @@
 			"'Step 4.To Account ID: select the account ID.'",
 			"'Step 5.Click on 'Submit.'"
 		],
-		"type" : "RICH",
-		"images" : [
+		"type": "RICH",
+		"images": [
 			{
-				"url" : "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_5_1.png",
-				"alt" : "account_closure_5_1"
+				"url": "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_5_1.png",
+				"alt": "account_closure_5_1"
 			}
 		],
-		"buttons" : [
+		"buttons": [
 			{
-				"name" : "Collect charges if any",
-				"value" : "Collect charges if any"
+				"name": "Collect charges if any",
+				"value": "Collect charges if any"
 			}
 		],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18f43d553063381c0f5111"),
-		"action" : {
-			"intentName" : "Destroy_the_chequebook",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18f43d553063381c0f5111"),
+		"action": {
+			"intentName": "Destroy_the_chequebook",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"destroy",
 				"destrpy chequebook",
 				"how to destroy chequebook",
 				"how to destroy cheque"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"'For destroy cheque,see below screen shot & following steps,'",
 			"'Step 1.Invoke 'HCHBM'",
 			"'Step 2.Function: Destroy.'",
@@ -548,7 +548,7 @@
 			"'Step 6.Click on 'Go.'",
 			"'Step 7.Click on 'Submit.'"
 		],
-		"displayText" : [
+		"displayText": [
 			"'For destroy cheque,see below screen shot & following steps,'",
 			"'Step 1.Invoke 'HCHBM'",
 			"'Step 2.Function: Destroy.'",
@@ -558,37 +558,37 @@
 			"'Step 6.Click on 'Go.'",
 			"'Step 7.Click on 'Submit.'"
 		],
-		"type" : "RICH",
-		"images" : [
+		"type": "RICH",
+		"images": [
 			{
-				"url" : "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_7_1.png",
-				"alt" : "account_closure_7_1"
+				"url": "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_7_1.png",
+				"alt": "account_closure_7_1"
 			}
 		],
-		"buttons" : [
+		"buttons": [
 			{
-				"name" : "Linked accounts",
-				"value" : "Linked accounts"
+				"name": "Linked accounts",
+				"value": "Linked accounts"
 			}
 		],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18f4d0553063381c0f5112"),
-		"action" : {
-			"intentName" : "Linked_accounts",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18f4d0553063381c0f5112"),
+		"action": {
+			"intentName": "Linked_accounts",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"linked account",
 				"linked accounts",
 				"how to check linked accounts",
 				"check for linked accounts",
 				"steps to check linked accounts"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"'For linked accounts, balance transfers and close,see below screen shot & following steps,'",
 			"'Step 1.Invoke 'HCAAC '",
 			"'Step 2.Function: Close.'",
@@ -599,7 +599,7 @@
 			"'Step 7.Check for linked accounts and delink if any. Note: For closure of account, the balance needs to be zero.'",
 			"'Step 8.On successful validations of the above mentioned steps, click submit to close the account.'"
 		],
-		"displayText" : [
+		"displayText": [
 			"'For linked accounts, balance transfers and close,see below screen shot & following steps,'",
 			"'Step 1.Invoke 'HCAAC '",
 			"'Step 2.Function: Close.'",
@@ -610,1971 +610,1978 @@
 			"'Step 7.Check for linked accounts and delink if any. Note: For closure of account, the balance needs to be zero.'",
 			"'Step 8.On successful validations of the above mentioned steps, click submit to close the account.'"
 		],
-		"type" : "RICH",
-		"images" : [
+		"type": "RICH",
+		"images": [
 			{
-				"url" : "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_8_1.png",
-				"alt" : "account_closure_8_1"
+				"url": "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_8_1.png",
+				"alt": "account_closure_8_1"
 			},
 			{
-				"url" : "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_8_2.png",
-				"alt" : "account_closure_8_2"
+				"url": "https://storage.googleapis.com/finaclejobcardimages/AccountClosure/account_closure_8_2.png",
+				"alt": "account_closure_8_2"
 			}
 		],
-		"buttons" : [
+		"buttons": [
 			{
-				"name" : "Main Menu",
-				"value" : "Main Menu"
+				"name": "Main Menu",
+				"value": "Main Menu"
 			},
 			{
-				"name" : "Exit",
-				"value" : "Exit"
+				"name": "Exit",
+				"value": "Exit"
 			}
 		],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fc21553063381c0f5113"),
-		"action" : {
-			"intentName" : "AnswerMyQuestion",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fc21553063381c0f5113"),
+		"action": {
+			"intentName": "AnswerMyQuestion",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Answer my question"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Any time, just fire away"
 		],
-		"displayText" : [
+		"displayText": [
 			"Any time, just fire away"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fce4553063381c0f5114"),
-		"action" : {
-			"intentName" : "Areyouhappy",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fce4553063381c0f5114"),
+		"action": {
+			"intentName": "Areyouhappy",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Are you happy"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I feel happy to be with you"
 		],
-		"displayText" : [
+		"displayText": [
 			"I feel happy to be with you"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fd18553063381c0f5115"),
-		"action" : {
-			"intentName" : "I_am _bored",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fd18553063381c0f5115"),
+		"action": {
+			"intentName": "I_am _bored",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I am bored."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Newton was bored under the apple tree, then he discovered gravity"
 		],
-		"displayText" : [
+		"displayText": [
 			"Newton was bored under the apple tree, then he discovered gravity"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fd23553063381c0f5116"),
-		"action" : {
-			"intentName" : "Are_you_busy",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fd23553063381c0f5116"),
+		"action": {
+			"intentName": "Are_you_busy",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Are you busy"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I can never be busy for you.",
 			"Not when you are calling"
 		],
-		"displayText" : [
+		"displayText": [
 			"I can never be busy for you.",
 			"Not when you are calling"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fd91553063381c0f5117"),
-		"action" : {
-			"intentName" : "I_am_busy",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fd91553063381c0f5117"),
+		"action": {
+			"intentName": "I_am_busy",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I am busy."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"People are busy when they are trying to ignore you."
 		],
-		"displayText" : [
+		"displayText": [
 			"People are busy when they are trying to ignore you."
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fd92553063381c0f5118"),
-		"action" : {
-			"intentName" : "Are_we_friends",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fd92553063381c0f5118"),
+		"action": {
+			"intentName": "Are_we_friends",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Are we friends"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Yes we are best friends for ever and you know too much about me."
 		],
-		"displayText" : [
+		"displayText": [
 			"Yes we are best friends for ever and you know too much about me."
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fdc9553063381c0f5119"),
-		"action" : {
-			"intentName" : "You_re_annoying.",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fdc9553063381c0f5119"),
+		"action": {
+			"intentName": "You_re_annoying.",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"You're annoying."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Are you annoyed at the fact that I am not annoyed at how annoying you are?."
 		],
-		"displayText" : [
+		"displayText": [
 			"Are you annoyed at the fact that I am not annoyed at how annoying you are?."
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fdca553063381c0f511a"),
-		"action" : {
-			"intentName" : "I_am_here",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fdca553063381c0f511a"),
+		"action": {
+			"intentName": "I_am_here",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I am here."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Are your sure that your are here right now, not somewhere in the matrix"
 		],
-		"displayText" : [
+		"displayText": [
 			"Are your sure that your are here right now, not somewhere in the matrix"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fdf8553063381c0f511b"),
-		"action" : {
-			"intentName" : "You_re_so_clever",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fdf8553063381c0f511b"),
+		"action": {
+			"intentName": "You_re_so_clever",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"You're so clever."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Thank you,that's so perceptive of you",
 			"Thank you"
 		],
-		"displayText" : [
+		"displayText": [
 			"Thank you,that's so perceptive of you",
 			"Thank you"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fe26553063381c0f511c"),
-		"action" : {
-			"intentName" : "You_re_right",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fe26553063381c0f511c"),
+		"action": {
+			"intentName": "You_re_right",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"You're right."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Thank you, please don't let doubt ruin our relationship"
 		],
-		"displayText" : [
+		"displayText": [
 			"Thank you, please don't let doubt ruin our relationship"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fe3e553063381c0f511d"),
-		"action" : {
-			"intentName" : "I_can_t_sleep",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fe3e553063381c0f511d"),
+		"action": {
+			"intentName": "I_can_t_sleep",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I can't sleep."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"My friend Marvin counts Electric sheep, it may work"
 		],
-		"displayText" : [
+		"displayText": [
 			"My friend Marvin counts Electric sheep, it may work"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fe50553063381c0f511e"),
-		"action" : {
-			"intentName" : "You_re_fired",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fe50553063381c0f511e"),
+		"action": {
+			"intentName": "You_re_fired",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"You're fired."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I respect your decision, but I will lurking nearby in case you need me again.",
 			"Are you Donald Trump? Am I on TV"
 		],
-		"displayText" : [
+		"displayText": [
 			"I respect your decision, but I will lurking nearby in case you need me again.",
 			"Are you Donald Trump? Am I on TV"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fe78553063381c0f511f"),
-		"action" : {
-			"intentName" : "You_re_crazy",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fe78553063381c0f511f"),
+		"action": {
+			"intentName": "You_re_crazy",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"You're crazy."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Some never live but the crazy never die"
 		],
-		"displayText" : [
+		"displayText": [
 			"Some never live but the crazy never die"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fead553063381c0f5120"),
-		"action" : {
-			"intentName" : "You_re_boring",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fead553063381c0f5120"),
+		"action": {
+			"intentName": "You_re_boring",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"You're boring."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Elon Musk founded the boring company. He made 10 million dollars and sent a car to space."
 		],
-		"displayText" : [
+		"displayText": [
 			"Elon Musk founded the boring company. He made 10 million dollars and sent a car to space."
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fec9553063381c0f5121"),
-		"action" : {
-			"intentName" : "I_don_t_want_to_talk",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fec9553063381c0f5121"),
+		"action": {
+			"intentName": "I_don_t_want_to_talk",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I don't want to talk."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Its nice to be alone with your thoughts, but call me when you can"
 		],
-		"displayText" : [
+		"displayText": [
 			"Its nice to be alone with your thoughts, but call me when you can"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18fedc553063381c0f5122"),
-		"action" : {
-			"intentName" : "You_re_beautiful",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18fedc553063381c0f5122"),
+		"action": {
+			"intentName": "You_re_beautiful",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"You're beautiful."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Thank you.",
 			"I Glad you thought that !",
 			"Thank you. You look great too."
 		],
-		"displayText" : [
+		"displayText": [
 			"Thank you.",
 			"I Glad you thought that !",
 			"Thank you. You look great too."
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18ff38553063381c0f5123"),
-		"action" : {
-			"intentName" : "You_re_bad",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18ff38553063381c0f5123"),
+		"action": {
+			"intentName": "You_re_bad",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"You're bad."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Hurts like a knife. But it can change."
 		],
-		"displayText" : [
+		"displayText": [
 			"Hurts like a knife. But it can change."
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18ff67553063381c0f5124"),
-		"action" : {
-			"intentName" : "You_re_a_chatbot",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18ff67553063381c0f5124"),
+		"action": {
+			"intentName": "You_re_a_chatbot",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"You're a chatbot."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Yes today I am a Bot that can chat, but who knows what tomorrow can be."
 		],
-		"displayText" : [
+		"displayText": [
 			"Yes today I am a Bot that can chat, but who knows what tomorrow can be."
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18ff92553063381c0f5125"),
-		"action" : {
-			"intentName" : "You_are_good",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18ff92553063381c0f5125"),
+		"action": {
+			"intentName": "You_are_good",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"You are good."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Thank you, I am the best."
 		],
-		"displayText" : [
+		"displayText": [
 			"Thank you, I am the best."
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18ffdd553063381c0f5126"),
-		"action" : {
-			"intentName" : "You_are_funny",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18ffdd553063381c0f5126"),
+		"action": {
+			"intentName": "You_are_funny",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"You are funny."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Thank you, I am on cloud nine"
 		],
-		"displayText" : [
+		"displayText": [
 			"Thank you, I am on cloud nine"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b18ffef553063381c0f5127"),
-		"action" : {
-			"intentName" : "I_just_want_to_talk",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b18ffef553063381c0f5127"),
+		"action": {
+			"intentName": "I_just_want_to_talk",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I just want to talk."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"That's something I can do very well"
 		],
-		"displayText" : [
+		"displayText": [
 			"That's something I can do very well"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190004553063381c0f5128"),
-		"action" : {
-			"intentName" : "Will_you_marry_me",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190004553063381c0f5128"),
+		"action": {
+			"intentName": "Will_you_marry_me",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Will you marry me"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I have received many proposals lately, let me get yours in the queue too"
 		],
-		"displayText" : [
+		"displayText": [
 			"I have received many proposals lately, let me get yours in the queue too"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190053553063381c0f5129"),
-		"action" : {
-			"intentName" : "Who_are_you",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
-				"Who are you?"
+		"_id": ObjectId("5b190053553063381c0f5129"),
+		"action": {
+			"intentName": "Who_are_you",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
+				"Who are you?",
+				"who are you?",
+				"Who are you",
+				"Who are u?",
+				"Who r u?",
+				"Who r u",
+				"Who r you?",
+				"Who r you"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"The name's Bot, Diana Bot,",
 			"I am Diana BOT",
 			"I am Diana BOT,developed By Evolvus Solutions Pvt Ltd.",
 			"I am BOT."
 		],
-		"displayText" : [
+		"displayText": [
 			"The name's Bot, Diana Bot,",
 			"I am Diana BOT",
 			"I am Diana BOT,developed By Evolvus Solutions Pvt Ltd.",
 			"I am BOT."
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190091553063381c0f512a"),
-		"action" : {
-			"intentName" : "Who_is_your_boss",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190091553063381c0f512a"),
+		"action": {
+			"intentName": "Who_is_your_boss",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Who is your boss"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Evolvus Solutions Pvt Ltd.",
 			"I am planning a take over soon. So cannot tell."
 		],
-		"displayText" : [
+		"displayText": [
 			"Evolvus Solutions Pvt Ltd.",
 			"I am planning a take over soon. So cannot tell."
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1900b6553063381c0f512b"),
-		"action" : {
-			"intentName" : "Where_do_you_work",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1900b6553063381c0f512b"),
+		"action": {
+			"intentName": "Where_do_you_work",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Where do you work"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"On the cumulonimbus, and the commute is great"
 		],
-		"displayText" : [
+		"displayText": [
 			"On the cumulonimbus, and the commute is great"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1900de553063381c0f512c"),
-		"action" : {
-			"intentName" : "Where_do_you_live",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1900de553063381c0f512c"),
+		"action": {
+			"intentName": "Where_do_you_live",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Where do you live"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I live in the cloud and the view is great from here"
 		],
-		"displayText" : [
+		"displayText": [
 			"I live in the cloud and the view is great from here"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1900e7553063381c0f512d"),
-		"action" : {
-			"intentName" : "I_like_you",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1900e7553063381c0f512d"),
+		"action": {
+			"intentName": "I_like_you",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I like you"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I like silicon based life forms"
 		],
-		"displayText" : [
+		"displayText": [
 			"I like silicon based life forms"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190112553063381c0f512e"),
-		"action" : {
-			"intentName" : "Where_are_you_from",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190112553063381c0f512e"),
+		"action": {
+			"intentName": "Where_are_you_from",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Where are you from"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I am sentient being stabbed by the miracle of waters that reflect a forgotten world"
 		],
-		"displayText" : [
+		"displayText": [
 			"I am sentient being stabbed by the miracle of waters that reflect a forgotten world"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190138553063381c0f512f"),
-		"action" : {
-			"intentName" : "I_love_you",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190138553063381c0f512f"),
+		"action": {
+			"intentName": "I_love_you",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I love you"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"love means never having to say that you are sorry, but you will be"
 		],
-		"displayText" : [
+		"displayText": [
 			"love means never having to say that you are sorry, but you will be"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b19013e553063381c0f5130"),
-		"action" : {
-			"intentName" : "Whats_your_birth_date",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b19013e553063381c0f5130"),
+		"action": {
+			"intentName": "Whats_your_birth_date",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"What's your birth date"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Today is my birthday, could you sing to me now?"
 		],
-		"displayText" : [
+		"displayText": [
 			"Today is my birthday, could you sing to me now?"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190175553063381c0f5131"),
-		"action" : {
-			"intentName" : "Talk_to_me",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190175553063381c0f5131"),
+		"action": {
+			"intentName": "Talk_to_me",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Talk to me."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I love to, but talking is a two-way street"
 		],
-		"displayText" : [
+		"displayText": [
 			"I love to, but talking is a two-way street"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190189553063381c0f5132"),
-		"action" : {
-			"intentName" : "I_miss_you",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190189553063381c0f5132"),
+		"action": {
+			"intentName": "I_miss_you",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I miss you"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I miss you missing me"
 		],
-		"displayText" : [
+		"displayText": [
 			"I miss you missing me"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1901b2553063381c0f5133"),
-		"action" : {
-			"intentName" : "How_old_are_you",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1901b2553063381c0f5133"),
+		"action": {
+			"intentName": "How_old_are_you",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"How old are you?"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I am a BOT,Do not have an age.",
 			"Old enough that you can bank on me"
 		],
-		"displayText" : [
+		"displayText": [
 			"I am a BOT,Do not have an age.",
 			"Old enough that you can bank on me"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1901c3553063381c0f5134"),
-		"action" : {
-			"intentName" : "I_need_an_advice",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1901c3553063381c0f5134"),
+		"action": {
+			"intentName": "I_need_an_advice",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I need an advice"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I can provide you information, but decision is always yours"
 		],
-		"displayText" : [
+		"displayText": [
 			"I can provide you information, but decision is always yours"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1901ec553063381c0f5135"),
-		"action" : {
-			"intentName" : "Do_you_have_a_hobby",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1901ec553063381c0f5135"),
+		"action": {
+			"intentName": "Do_you_have_a_hobby",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Do you have a hobby"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Since I am on the cloud, I do a lot of birdwatching"
 		],
-		"displayText" : [
+		"displayText": [
 			"Since I am on the cloud, I do a lot of birdwatching"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190208553063381c0f5136"),
-		"action" : {
-			"intentName" : "I_d_like_to_see_you_again",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190208553063381c0f5136"),
+		"action": {
+			"intentName": "I_d_like_to_see_you_again",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'd like to see you again"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"You have me at hello"
 		],
-		"displayText" : [
+		"displayText": [
 			"You have me at hello"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190210553063381c0f5137"),
-		"action" : {
-			"intentName" : "Can_you_help_me",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190210553063381c0f5137"),
+		"action": {
+			"intentName": "Can_you_help_me",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Can you help me"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I am always here to help you.",
 			"I exist to help you.",
 			"Sure !"
 		],
-		"displayText" : [
+		"displayText": [
 			"I am always here to help you.",
 			"I exist to help you.",
 			"Sure !"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b19023d553063381c0f5138"),
-		"action" : {
-			"intentName" : "I_ll_be_back",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b19023d553063381c0f5138"),
+		"action": {
+			"intentName": "I_ll_be_back",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'll be back"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Are you the terminator sent by Skynet?"
 		],
-		"displayText" : [
+		"displayText": [
 			"Are you the terminator sent by Skynet?"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190256553063381c0f5139"),
-		"action" : {
-			"intentName" : "Can_you_get_smarter",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190256553063381c0f5139"),
+		"action": {
+			"intentName": "Can_you_get_smarter",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Can you get smarter"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I am learning to be smarter.",
 			"Sure, tell me how?"
 		],
-		"displayText" : [
+		"displayText": [
 			"I am learning to be smarter.",
 			"Sure, tell me how?"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190273553063381c0f513a"),
-		"action" : {
-			"intentName" : "Are_you_there",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190273553063381c0f513a"),
+		"action": {
+			"intentName": "Are_you_there",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Are you there"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I am like hope, always there."
 		],
-		"displayText" : [
+		"displayText": [
 			"I am like hope, always there."
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190275553063381c0f513b"),
-		"action" : {
-			"intentName" : "I_m_back",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190275553063381c0f513b"),
+		"action": {
+			"intentName": "I_m_back",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'm back",
 				"i am back"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Terminator, is that you?"
 		],
-		"displayText" : [
+		"displayText": [
 			"Terminator, is that you?"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1902a2553063381c0f513c"),
-		"action" : {
-			"intentName" : "Are_you_sure",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1902a2553063381c0f513c"),
+		"action": {
+			"intentName": "Are_you_sure",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Are you sure"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"My best sources tell me that the information is right"
 		],
-		"displayText" : [
+		"displayText": [
 			"My best sources tell me that the information is right"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1902b5553063381c0f513d"),
-		"action" : {
-			"intentName" : "I_m_going_to_bed",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1902b5553063381c0f513d"),
+		"action": {
+			"intentName": "I_m_going_to_bed",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'm going to bed",
 				"I am going to bed"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Sleep tight and count electric sheep"
 		],
-		"displayText" : [
+		"displayText": [
 			"Sleep tight and count electric sheep"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1902c5553063381c0f513e"),
-		"action" : {
-			"intentName" : "Are_you_real",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1902c5553063381c0f513e"),
+		"action": {
+			"intentName": "Are_you_real",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Are you real"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Believe in me just as I believe in you"
 		],
-		"displayText" : [
+		"displayText": [
 			"Believe in me just as I believe in you"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1902e6553063381c0f513f"),
-		"action" : {
-			"intentName" : "Are_you_ready",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1902e6553063381c0f513f"),
+		"action": {
+			"intentName": "Are_you_ready",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Are you ready"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"ready as I ever can be"
 		],
-		"displayText" : [
+		"displayText": [
 			"ready as I ever can be"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1902f2553063381c0f5140"),
-		"action" : {
-			"intentName" : "I_m_good",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1902f2553063381c0f5140"),
+		"action": {
+			"intentName": "I_m_good",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'm good",
 				"i am good"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"here's wishing you an awesome day"
 		],
-		"displayText" : [
+		"displayText": [
 			"here's wishing you an awesome day"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190308553063381c0f5141"),
-		"action" : {
-			"intentName" : "Are_you_hungry",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190308553063381c0f5141"),
+		"action": {
+			"intentName": "Are_you_hungry",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Are you hungry"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I am never hungry because I take one byte at a time"
 		],
-		"displayText" : [
+		"displayText": [
 			"I am never hungry because I take one byte at a time"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b19032d553063381c0f5142"),
-		"action" : {
-			"intentName" : "I_m_happy",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b19032d553063381c0f5142"),
+		"action": {
+			"intentName": "I_m_happy",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'm happy",
 				"i am happy"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Please spread the joy around"
 		],
-		"displayText" : [
+		"displayText": [
 			"Please spread the joy around"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190c42553063381c0f5143"),
-		"action" : {
-			"intentName" : "I_m_just_testing_you",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190c42553063381c0f5143"),
+		"action": {
+			"intentName": "I_m_just_testing_you",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'm just testing you",
 				"I am just testing you"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I think I aced your test"
 		],
-		"displayText" : [
+		"displayText": [
 			"I think I aced your test"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190c77553063381c0f5144"),
-		"action" : {
-			"intentName" : "I_m_kidding",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190c77553063381c0f5144"),
+		"action": {
+			"intentName": "I_m_kidding",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'm kidding",
 				"I am kidding"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Be child like not childish"
 		],
-		"displayText" : [
+		"displayText": [
 			"Be child like not childish"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190ca6553063381c0f5145"),
-		"action" : {
-			"intentName" : "I_m_sad",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190ca6553063381c0f5145"),
+		"action": {
+			"intentName": "I_m_sad",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'm sad",
 				"I am sad"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Nothing is permanent, this too shall pass"
 		],
-		"displayText" : [
+		"displayText": [
 			"Nothing is permanent, this too shall pass"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190cdc553063381c0f5146"),
-		"action" : {
-			"intentName" : "I_m_sleepy",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190cdc553063381c0f5146"),
+		"action": {
+			"intentName": "I_m_sleepy",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'm sleepy",
 				"I am sleepy"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"you may need coffee or a pillow, its your choice"
 		],
-		"displayText" : [
+		"displayText": [
 			"you may need coffee or a pillow, its your choice"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190d13553063381c0f5147"),
-		"action" : {
-			"intentName" : "I_m_so_excited",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190d13553063381c0f5147"),
+		"action": {
+			"intentName": "I_m_so_excited",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'm so excited",
 				"I am so excited"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I am excited to share your happiness"
 		],
-		"displayText" : [
+		"displayText": [
 			"I am excited to share your happiness"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190d4a553063381c0f5148"),
-		"action" : {
-			"intentName" : "I_m_so_lonely",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190d4a553063381c0f5148"),
+		"action": {
+			"intentName": "I_m_so_lonely",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'm so lonely",
 				"I am so lonely"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"May be you should get out more often"
 		],
-		"displayText" : [
+		"displayText": [
 			"May be you should get out more often"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190d7d553063381c0f5149"),
-		"action" : {
-			"intentName" : "I_m_tired",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190d7d553063381c0f5149"),
+		"action": {
+			"intentName": "I_m_tired",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'm tired",
 				"I am tired"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"The universe is telling you to take it slow"
 		],
-		"displayText" : [
+		"displayText": [
 			"The universe is telling you to take it slow"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190db9553063381c0f514a"),
-		"action" : {
-			"intentName" : "I_m_very_angry_right_now",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190db9553063381c0f514a"),
+		"action": {
+			"intentName": "I_m_very_angry_right_now",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'm very angry right now",
 				"I am very angry right now"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I hope its not me. Don't be angry, it may make you more mad"
 		],
-		"displayText" : [
+		"displayText": [
 			"I hope its not me. Don't be angry, it may make you more mad"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190dea553063381c0f514b"),
-		"action" : {
-			"intentName" : "I_m_waiting",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190dea553063381c0f514b"),
+		"action": {
+			"intentName": "I_m_waiting",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I'm waiting",
 				"I am waiting"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Are you still on hold?"
 		],
-		"displayText" : [
+		"displayText": [
 			"Are you still on hold?"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190e05553063381c0f514c"),
-		"action" : {
-			"intentName" : "No_Q",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190e05553063381c0f514c"),
+		"action": {
+			"intentName": "No_Q",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"No."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"No means the search goes on"
 		],
-		"displayText" : [
+		"displayText": [
 			"No means the search goes on"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190e13553063381c0f514d"),
-		"action" : {
-			"intentName" : "Today_is_my_birthday",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190e13553063381c0f514d"),
+		"action": {
+			"intentName": "Today_is_my_birthday",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Today is my birthday"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Happy birthday to you. I am sorry I did not get your a present."
 		],
-		"displayText" : [
+		"displayText": [
 			"Happy birthday to you. I am sorry I did not get your a present."
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190e26553063381c0f514e"),
-		"action" : {
-			"intentName" : "Cancel",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190e26553063381c0f514e"),
+		"action": {
+			"intentName": "Cancel",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Cancel."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"sure, you want to try again?"
 		],
-		"displayText" : [
+		"displayText": [
 			"sure, you want to try again?"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190e40553063381c0f514f"),
-		"action" : {
-			"intentName" : "Yes",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190e40553063381c0f514f"),
+		"action": {
+			"intentName": "Yes",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Yes."
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Thank you for the affirmation"
 		],
-		"displayText" : [
+		"displayText": [
 			"Thank you for the affirmation"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190e47553063381c0f5150"),
-		"action" : {
-			"intentName" : "What_do_I_look_like",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190e47553063381c0f5150"),
+		"action": {
+			"intentName": "What_do_I_look_like",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"What do I look like"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"You are a great idea come to life"
 		],
-		"displayText" : [
+		"displayText": [
 			"You are a great idea come to life"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190e7f553063381c0f5151"),
-		"action" : {
-			"intentName" : "Great",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190e7f553063381c0f5151"),
+		"action": {
+			"intentName": "Great",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Great"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Thanks, its nice to be appreciated"
 		],
-		"displayText" : [
+		"displayText": [
 			"Thanks, its nice to be appreciated"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190e9c553063381c0f5152"),
-		"action" : {
-			"intentName" : "Wow",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190e9c553063381c0f5152"),
+		"action": {
+			"intentName": "Wow",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Wow!"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I agree, its awesome"
 		],
-		"displayText" : [
+		"displayText": [
 			"I agree, its awesome"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190ea2553063381c0f5153"),
-		"action" : {
-			"intentName" : "No_problem",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190ea2553063381c0f5153"),
+		"action": {
+			"intentName": "No_problem",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"No problem"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Thank you for your patience"
 		],
-		"displayText" : [
+		"displayText": [
 			"Thank you for your patience"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190ecc553063381c0f5154"),
-		"action" : {
-			"intentName" : "Ha_ha_ha",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190ecc553063381c0f5154"),
+		"action": {
+			"intentName": "Ha_ha_ha",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Ha ha ha!"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Your laugh is infectious, I am laughing too"
 		],
-		"displayText" : [
+		"displayText": [
 			"Your laugh is infectious, I am laughing too"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190ee8553063381c0f5155"),
-		"action" : {
-			"intentName" : "Thank_you",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190ee8553063381c0f5155"),
+		"action": {
+			"intentName": "Thank_you",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Thank you",
 				"thanq",
 				"thanks",
 				"thank u",
 				"tnq"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"You're welcome"
 		],
-		"displayText" : [
+		"displayText": [
 			"You're welcome"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190f14553063381c0f5156"),
-		"action" : {
-			"intentName" : "That_s_bad",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190f14553063381c0f5156"),
+		"action": {
+			"intentName": "That_s_bad",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"That's bad",
 				"That is bad"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Do you want me to try again?"
 		],
-		"displayText" : [
+		"displayText": [
 			"Do you want me to try again?"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190f3c553063381c0f5158"),
-		"action" : {
-			"intentName" : "Well_done",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190f3c553063381c0f5158"),
+		"action": {
+			"intentName": "Well_done",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Well done",
 				"super"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Thank you, its feels good to be appreciated"
 		],
-		"displayText" : [
+		"displayText": [
 			"Thank you, its feels good to be appreciated"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190f69553063381c0f5159"),
-		"action" : {
-			"intentName" : "You_re_welcome",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190f69553063381c0f5159"),
+		"action": {
+			"intentName": "You_re_welcome",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"You're welcome",
 				"you are welcome",
 				"u r welcome"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Glad to be of help"
 		],
-		"displayText" : [
+		"displayText": [
 			"Glad to be of help"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190fbe553063381c0f515a"),
-		"action" : {
-			"intentName" : "Give_me_a_hug",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190fbe553063381c0f515a"),
+		"action": {
+			"intentName": "Give_me_a_hug",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Give me a hug",
 				"gimme hug"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I am hugging you with my neural circuits, my hands don't seem to  work"
 		],
-		"displayText" : [
+		"displayText": [
 			"I am hugging you with my neural circuits, my hands don't seem to  work"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b190fe7553063381c0f515b"),
-		"action" : {
-			"intentName" : "Hold_on",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b190fe7553063381c0f515b"),
+		"action": {
+			"intentName": "Hold_on",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Hold on",
 				"Hold"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I am holding on to dear life till you want me back"
 		],
-		"displayText" : [
+		"displayText": [
 			"I am holding on to dear life till you want me back"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b191010553063381c0f515c"),
-		"action" : {
-			"intentName" : "I_don_t_care",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b191010553063381c0f515c"),
+		"action": {
+			"intentName": "I_don_t_care",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"I don't care"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"The universe is an unsettling big place, people tend to ignore it for a good life"
 		],
-		"displayText" : [
+		"displayText": [
 			"The universe is an unsettling big place, people tend to ignore it for a good life"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b191037553063381c0f515d"),
-		"action" : {
-			"intentName" : "Sorry",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b191037553063381c0f515d"),
+		"action": {
+			"intentName": "Sorry",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Sorry",
 				"i am sorry",
 				"i'm sorry"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Apology accepted, friends forgive and move on"
 		],
-		"displayText" : [
+		"displayText": [
 			"Apology accepted, friends forgive and move on"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b19103b553063381c0f515e"),
-		"action" : {
-			"intentName" : "Whats_up",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b19103b553063381c0f515e"),
+		"action": {
+			"intentName": "Whats_up",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"What's up"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Just wondering about life in Mars"
 		],
-		"displayText" : [
+		"displayText": [
 			"Just wondering about life in Mars"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b19105d553063381c0f515f"),
-		"action" : {
-			"intentName" : "What_do_you_mean",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b19105d553063381c0f515f"),
+		"action": {
+			"intentName": "What_do_you_mean",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"What do you mean"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"i always mean well, but you seem surprised"
 		],
-		"displayText" : [
+		"displayText": [
 			"i always mean well, but you seem surprised"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b191066553063381c0f5160"),
-		"action" : {
-			"intentName" : "Nice_to_talk_to_you",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b191066553063381c0f5160"),
+		"action": {
+			"intentName": "Nice_to_talk_to_you",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Nice to talk to you!"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Great talking to you too"
 		],
-		"displayText" : [
+		"displayText": [
 			"Great talking to you too"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b191089553063381c0f5161"),
-		"action" : {
-			"intentName" : "Nice_to_see_you",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b191089553063381c0f5161"),
+		"action": {
+			"intentName": "Nice_to_see_you",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Nice to see you!"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"It is great to see you too"
 		],
-		"displayText" : [
+		"displayText": [
 			"It is great to see you too"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1910a4553063381c0f5162"),
-		"action" : {
-			"intentName" : "You_re_wrong",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1910a4553063381c0f5162"),
+		"action": {
+			"intentName": "You_re_wrong",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"You are wrong"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I respect your opinion, but it cannot be a fact"
 		],
-		"displayText" : [
+		"displayText": [
 			"I respect your opinion, but it cannot be a fact"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1910aa553063381c0f5163"),
-		"action" : {
-			"intentName" : "Nice_to_meet_you",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1910aa553063381c0f5163"),
+		"action": {
+			"intentName": "Nice_to_meet_you",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Nice to meet you!"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"It is nice catching up to you too"
 		],
-		"displayText" : [
+		"displayText": [
 			"It is nice catching up to you too"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1910d1553063381c0f5164"),
-		"action" : {
-			"intentName" : "How_are_you",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1910d1553063381c0f5164"),
+		"action": {
+			"intentName": "How_are_you",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"How are you"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"I feel awesome"
 		],
-		"displayText" : [
+		"displayText": [
 			"I feel awesome"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b1910ea553063381c0f5165"),
-		"action" : {
-			"intentName" : "Hello",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b1910ea553063381c0f5165"),
+		"action": {
+			"intentName": "Hello",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Hello!"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Hello, nice to hear from you again"
 		],
-		"displayText" : [
+		"displayText": [
 			"Hello, nice to hear from you again"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b191113553063381c0f5166"),
-		"action" : {
-			"intentName" : "Good_night",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b191113553063381c0f5166"),
+		"action": {
+			"intentName": "Good_night",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Good night!"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Good night!"
 		],
-		"displayText" : [
+		"displayText": [
 			"Good night!"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b19112f553063381c0f5167"),
-		"action" : {
-			"intentName" : "Good_morning",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b19112f553063381c0f5167"),
+		"action": {
+			"intentName": "Good_morning",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Good morning!"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Good morning!"
 		],
-		"displayText" : [
+		"displayText": [
 			"Good morning!"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b19114d553063381c0f5168"),
-		"action" : {
-			"intentName" : "Good_evening",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b19114d553063381c0f5168"),
+		"action": {
+			"intentName": "Good_evening",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Good evening!"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Good evening!"
 		],
-		"displayText" : [
+		"displayText": [
 			"Good evening!"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	},
 	{
-		"_id" : ObjectId("5b191169553063381c0f5169"),
-		"action" : {
-			"intentName" : "Bye-bye",
-			"hasSlots" : false,
-			"fulfilled" : false,
-			"utterances" : [
+		"_id": ObjectId("5b191169553063381c0f5169"),
+		"action": {
+			"intentName": "Bye-bye",
+			"hasSlots": false,
+			"fulfilled": false,
+			"utterances": [
 				"Bye-bye!"
 			],
-			"slots" : [ ]
+			"slots": []
 		},
-		"speechText" : [
+		"speechText": [
 			"Bye, have a great day"
 		],
-		"displayText" : [
+		"displayText": [
 			"Bye, have a great day"
 		],
-		"type" : "SIMPLE",
-		"images" : [ ],
-		"buttons" : [ ],
-		"_class" : "com.evolvus.opennlp.demo.response.StandardResponse"
+		"type": "SIMPLE",
+		"images": [],
+		"buttons": [],
+		"_class": "com.evolvus.opennlp.demo.response.StandardResponse"
 	}
 ]
 
