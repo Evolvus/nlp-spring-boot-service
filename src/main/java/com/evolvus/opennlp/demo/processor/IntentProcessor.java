@@ -63,11 +63,10 @@ public class IntentProcessor {
 
 			List<StandardResponse> stdResponses = stdRespRepository.findByActionIntentName(action);
 			if (stdResponses.isEmpty()) {
-				resp.setStatus(HttpStatus.NOT_FOUND);
-				resp.setBody(_DEFAULT_RESPONSE[random.nextInt(_DEFAULT_RESPONSE.length)]);
-			} else {
-				resp.setBody(stdResponses.get(0));
+				stdResponses = stdRespRepository.findByActionIntentName("ed");
 			}
+			resp.setBody(stdResponses.get(0));
+
 		} else {
 			resp.setBody(_DEFAULT_RESPONSE[random.nextInt(_DEFAULT_RESPONSE.length)]);
 		}
