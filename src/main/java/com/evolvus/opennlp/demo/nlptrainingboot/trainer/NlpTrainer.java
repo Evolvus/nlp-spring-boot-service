@@ -111,9 +111,9 @@ public class NlpTrainer {
 
 			List<StandardResponse> srData = repository.findAll();
 			Set<String> slotsSet = new HashSet<String>();
-			srData.parallelStream().forEach(sr -> {
+			srData.stream().forEach(sr -> {
 				Intent intent = sr.getAction();
-				String intentName = intent.getIntentName().replaceFirst("[.][^.]+$", "");
+				String intentName = intent.getIntentName();//.replaceFirst("[.][^.]+$", "");
 				File file = new File(String.format("%s/%s.txt", trainingDirectory.getAbsolutePath(), intentName));
 
 				slotsSet.addAll(intent.getSlots().stream().map(slot -> slot.getName()).collect(Collectors.toSet()));
