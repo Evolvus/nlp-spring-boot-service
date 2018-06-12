@@ -63,7 +63,7 @@ public class IntentProcessor {
 
 			List<StandardResponse> stdResponses = stdRespRepository.findByActionIntentName(action);
 			if (stdResponses.isEmpty()) {
-				stdResponses = stdRespRepository.findByActionIntentName("ed");
+				stdResponses = stdRespRepository.findByActionIntentName("DEFAULT_INTENT");
 			}
 			resp.setBody(stdResponses.get(0));
 
