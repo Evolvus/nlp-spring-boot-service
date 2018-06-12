@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 import com.evolvus.opennlp.demo.nlptrainingboot.trainer.Intent;
 import com.evolvus.opennlp.demo.nlptrainingboot.trainer.NlpTrainer;
@@ -80,7 +79,7 @@ public class IntentProcessor {
 	}
 
 	@RequestMapping(value = "/webhook", method = RequestMethod.POST)
-	public void webhook(@RequestBody String input) {
+	public ResponseEntity<SkypeResponse> webhook(@RequestBody String input) {
 		if (LOGGER.isDebugEnabled()) {
 			LOGGER.debug("Start webhook query:{}", input);
 		}
@@ -94,8 +93,8 @@ public class IntentProcessor {
 		response.setType("message");
 		From from = new From();
 
-		from.setId(request.getFrom().getId());
-		from.setName(request.getFrom().getName());
+		from.setId(request.getRecipient().getId());
+		from.setName(request.getRecipient().getName());
 		response.setFrom(from);
 
 		Conversation conversation = new Conversation();
@@ -104,8 +103,8 @@ public class IntentProcessor {
 		response.setConversation(conversation);
 
 		Recipient recipient = new Recipient();
-		recipient.setId(request.getRecipient().getId());
-		recipient.setName(request.getRecipient().getName());
+		recipient.setId(request.getFrom().getId());
+		recipient.setName(request.getFrom().getName());
 		response.setRecipient(recipient);
 
 		response.setText("I have several times available on saturday");
@@ -117,14 +116,8 @@ public class IntentProcessor {
 		HttpHeaders header = new HttpHeaders();
 		header.add("X-Correlating-OperationId", request.getId());
 		System.out.println("End Processing sending response :" + response);
-		try {
-			RestTemplate restTemplate = new RestTemplate();
-			restTemplate.postForObject("https://smba.trafficmanager.net/apis/", response, String.class);
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.err.println(e);
-		}
-		// return new ResponseEntity<SkypeResponse>(response,header, HttpStatus.OK);
+
+		return new ResponseEntity<SkypeResponse>(response, header, HttpStatus.OK);
 
 	}
 
