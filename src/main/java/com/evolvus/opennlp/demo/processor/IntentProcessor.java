@@ -19,11 +19,13 @@ import com.evolvus.opennlp.demo.nlptrainingboot.trainer.Intent;
 import com.evolvus.opennlp.demo.nlptrainingboot.trainer.NlpTrainer;
 import com.evolvus.opennlp.demo.repo.StandardResponseRepository;
 import com.evolvus.opennlp.demo.response.StandardResponse;
+import com.evolvus.opennlp.demo.skype.request.SkypeRequest;
 import com.evolvus.opennlp.demo.skype.response.Conversation;
 import com.evolvus.opennlp.demo.skype.response.From;
 import com.evolvus.opennlp.demo.skype.response.Recipient;
 import com.evolvus.opennlp.demo.skype.response.SkypeResponse;
 import com.evolvus.opennlp.demo.util.NlpResponse;
+import com.google.gson.Gson;
 
 @RestController
 @RequestMapping("/api/v0.1")
@@ -42,6 +44,7 @@ public class IntentProcessor {
 	private StandardResponseRepository stdRespRepository;
 
 	Random random;
+	Gson gson = new Gson();
 
 	@RequestMapping(value = "/diana", method = RequestMethod.POST)
 	public ResponseEntity<NlpResponse> process(@RequestParam("query") String inputText) {
@@ -81,34 +84,37 @@ public class IntentProcessor {
 			LOGGER.debug("Start webhook query:{}", input);
 		}
 		System.out.println("/api/v0.1/webhook:" + input);
-		String json = "{'type': 'message'," + "'from': {'id': '12345678','name': 'EzipDemoSkype'},"
-				+ "'conversation': {'id': 'abcd1234','name': 'conversation's name'},"
-				+ "'recipient': {'id': '1234abcd','name': 'shrimankumbar'},"
-				+ "'text': 'I have several times available on Saturday!'," + "'replyToId': 'bf3cc9a2f5de...'}";
+		
+		SkypeRequest  request = gson.fromJson(input, SkypeRequest.class);
+		
+		System.out.println("Converted SkypeRequest Object "+request);
+			
+		
+		
 
 		SkypeResponse response = new SkypeResponse();
 		response.setType("message");
 		From from = new From();
 
-		from.setId("12345678");
-		from.setName("EzipDemoSkype");
-		response.setFromObject(from);
+		from.setId(request.getFrom().getId());
+		from.setName(request.getFrom().getName());
+		response.setFrom(from);
 
 		Conversation conversation = new Conversation();
-		conversation.setId("abcd1234");
-		conversation.setName("Discussion  on something");
-		response.setConversationObject(conversation);
+		conversation.setId(request.getConversation().getId());
+		conversation.setName(request.getConversation().getName());
+		response.setConversation(conversation);
 
 		Recipient recipient = new Recipient();
-		recipient.setId("1234abcd");
-		recipient.setName("Shrimankumbar");
-		response.setRecipientObject(recipient);
+		recipient.setId(request.getRecipient().getId());
+		recipient.setName(request.getRecipient().getName());
+		response.setRecipient(recipient);
 
 		response.setText("I have several times available on saturday");
 		response.setReplyToId("bf3cc9a2f5de");
 
 		if (LOGGER.isDebugEnabled()) {
-			LOGGER.debug("End process:{}", json);
+			LOGGER.debug("End process:{}", response);
 		}
 		System.out.println("End Processing sending response :" + response);
 		return new ResponseEntity<SkypeResponse>(response, HttpStatus.OK);

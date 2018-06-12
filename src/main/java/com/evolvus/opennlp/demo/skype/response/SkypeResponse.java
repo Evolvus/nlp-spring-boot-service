@@ -5,10 +5,9 @@ import lombok.Data;
 @Data
 public class SkypeResponse {
 	private String type;
-	From FromObject;
-	Conversation ConversationObject;
-	Recipient RecipientObject;
+	From from;
+	Conversation conversation;
+	Recipient recipient;
 	private String text;
 	private String replyToId;
-
 }
