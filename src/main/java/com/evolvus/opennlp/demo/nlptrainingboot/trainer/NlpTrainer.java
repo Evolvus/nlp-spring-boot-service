@@ -115,11 +115,11 @@ public class NlpTrainer {
 				Intent intent = sr.getAction();
 				String intentName = intent.getIntentName().replaceFirst("[.][^.]+$", "");
 				File file = new File(String.format("%s/%s.txt", trainingDirectory.getAbsolutePath(), intentName));
+
 				slotsSet.addAll(intent.getSlots().stream().map(slot -> slot.getName()).collect(Collectors.toSet()));
 				try {
-					if (!file.exists()) {
-						if (file.createNewFile())
-							LOGGER.info("File was'nt there,created !!");
+					if (file.createNewFile()) {
+						LOGGER.info("File was'nt there,created !!");
 					} else {
 						LOGGER.info("File exist not created !!");
 					}
@@ -162,7 +162,9 @@ public class NlpTrainer {
 			String slots = !slotsSet.isEmpty() ? slotsSet.stream().collect(Collectors.joining(",")) : null;
 			this.train(trainingDirectory.getAbsolutePath(), slots, EN);
 
-		} catch (Exception excep) {
+		} catch (
+
+		Exception excep) {
 			if (LOGGER.isErrorEnabled()) {
 				LOGGER.error("Exception while loading training data from database{}", excep);
 			}
