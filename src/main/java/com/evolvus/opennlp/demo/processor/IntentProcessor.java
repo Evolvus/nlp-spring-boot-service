@@ -71,34 +71,18 @@ public class IntentProcessor {
 	}
 
 	@RequestMapping(value = "/webhook", method = RequestMethod.POST)
-	public ResponseEntity<NlpResponse> webhook(@RequestBody String input) {
+	public ResponseEntity webhook(@RequestBody String input) {
 		random = new Random();
 		if (LOGGER.isDebugEnabled()) {
 			LOGGER.debug("Start webhook query:{}", input);
 		}
 		System.out.println("/api/v0.1/webhook:" + input);
-
-		NlpResponse resp = new NlpResponse(HttpStatus.OK, null);
-		Intent intent = this.intentExtractor.test(input);
-
-		if (intent != null) {
-
-			String action = intent.getIntentName();
-
-			List<StandardResponse> stdResponses = stdRespRepository.findByActionIntentName(action);
-			if (stdResponses.isEmpty()) {
-				resp.setStatus(HttpStatus.NOT_FOUND);
-				resp.setBody(_DEFAULT_RESPONSE[random.nextInt(_DEFAULT_RESPONSE.length)]);
-			} else {
-				resp.setBody(stdResponses.get(0));
-			}
-		} else {
-			resp.setBody(_DEFAULT_RESPONSE[random.nextInt(_DEFAULT_RESPONSE.length)]);
-		}
+		String json = "{'type': 'message','from': {'id': '12345678','name': 'EzipDemoSkype'},'conversation': {'id': 'abcd1234','name': 'conversation's name'},'recipient': {'id': '1234abcd','name': 'shrimankumbar'},'text': 'I have several times available on Saturday!','replyToId': 'bf3cc9a2f5de...'}";
+		
 		if (LOGGER.isDebugEnabled()) {
-			LOGGER.debug("End process:{}", resp);
+			LOGGER.debug("End process:{}", json);
 		}
-		return new ResponseEntity<NlpResponse>(resp, resp.getStatus());
+		return new ResponseEntity(json, HttpStatus.OK);
 
 	}
 

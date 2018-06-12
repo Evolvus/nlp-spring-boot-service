@@ -1,6 +1,0 @@
-Close 
-close
-CLOSE
-Exit 
-exit
-EXIT

@@ -1,0 +1,53 @@
+<!-- https://lit-inlet-30311.herokuapp.com/api/v0.1/webhook -->
+{
+	"type": "message",
+	"id": "1d4e7d63bef44153a178665bcd8f9410|0000000",
+	"timestamp": "2018-06-11T13:29:42.1767589Z",
+	"serviceUrl": "https://webchat.botframework.com/",
+	"channelId": "webchat",
+	"from": {
+		"id": "7ECAqSmnpNW",
+		"name": "You"
+	},
+	"conversation": {
+		"id": "1d4e7d63bef44153a178665bcd8f9410"
+	},
+	"recipient": {
+		"id": "EzipSkypeBotHandle@d-L0EAjyvXQ",
+		"name": "EzipDemoSkype"
+	},
+	"textFormat": "plain",
+	"locale": "en",
+	"text": "Hi from skype test",
+	"entities": [
+		{
+			"type": "ClientCapabilities",
+			"requiresBotState": true,
+			"supportsTts": true,
+			"supportsListening": true
+		}
+	],
+	"channelData": {
+		"clientActivityId": "1528718043032.5545577648640498.0"
+	}
+}
+
+<!--Response -->
+
+{
+    "type": "message",
+    "from": {
+        "id": "12345678",
+        "name": "EzipDemoSkype"
+    },
+    "conversation": {
+        "id": "abcd1234",
+        "name": "conversation's name"
+    },
+   "recipient": {
+        "id": "1234abcd",
+        "name": "shrimankumbar"
+    },
+    "text": "I have several times available on Saturday!",
+    "replyToId": "bf3cc9a2f5de..."
+}
