@@ -6,6 +6,7 @@ import java.util.Random;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -79,7 +80,6 @@ public class IntentProcessor {
 
 	@RequestMapping(value = "/webhook", method = RequestMethod.POST)
 	public ResponseEntity<SkypeResponse> webhook(@RequestBody String input) {
-		random = new Random();
 		if (LOGGER.isDebugEnabled()) {
 			LOGGER.debug("Start webhook query:{}", input);
 		}
@@ -89,9 +89,6 @@ public class IntentProcessor {
 		
 		System.out.println("Converted SkypeRequest Object "+request);
 			
-		
-		
-
 		SkypeResponse response = new SkypeResponse();
 		response.setType("message");
 		From from = new From();
@@ -102,7 +99,7 @@ public class IntentProcessor {
 
 		Conversation conversation = new Conversation();
 		conversation.setId(request.getConversation().getId());
-		conversation.setName(request.getConversation().getName());
+		conversation.setName("shrimank");
 		response.setConversation(conversation);
 
 		Recipient recipient = new Recipient();
@@ -111,13 +108,15 @@ public class IntentProcessor {
 		response.setRecipient(recipient);
 
 		response.setText("I have several times available on saturday");
-		response.setReplyToId("bf3cc9a2f5de");
+		response.setReplyToId(request.getFrom().getId());
 
 		if (LOGGER.isDebugEnabled()) {
 			LOGGER.debug("End process:{}", response);
 		}
+		HttpHeaders  header = new HttpHeaders();
+		header.add("X-Correlating-OperationId", request.getId());
 		System.out.println("End Processing sending response :" + response);
-		return new ResponseEntity<SkypeResponse>(response, HttpStatus.OK);
+		return new ResponseEntity<SkypeResponse>(response,header, HttpStatus.OK);
 
 	}
 
