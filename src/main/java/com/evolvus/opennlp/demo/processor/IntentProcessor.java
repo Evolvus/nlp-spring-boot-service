@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import com.evolvus.opennlp.demo.nlptrainingboot.trainer.Intent;
 import com.evolvus.opennlp.demo.nlptrainingboot.trainer.NlpTrainer;
@@ -79,16 +80,16 @@ public class IntentProcessor {
 	}
 
 	@RequestMapping(value = "/webhook", method = RequestMethod.POST)
-	public ResponseEntity<SkypeResponse> webhook(@RequestBody String input) {
+	public void webhook(@RequestBody String input) {
 		if (LOGGER.isDebugEnabled()) {
 			LOGGER.debug("Start webhook query:{}", input);
 		}
 		System.out.println("/api/v0.1/webhook:" + input);
-		
-		SkypeRequest  request = gson.fromJson(input, SkypeRequest.class);
-		
-		System.out.println("Converted SkypeRequest Object "+request);
-			
+
+		SkypeRequest request = gson.fromJson(input, SkypeRequest.class);
+
+		System.out.println("Converted SkypeRequest Object " + request);
+
 		SkypeResponse response = new SkypeResponse();
 		response.setType("message");
 		From from = new From();
@@ -113,10 +114,17 @@ public class IntentProcessor {
 		if (LOGGER.isDebugEnabled()) {
 			LOGGER.debug("End process:{}", response);
 		}
-		HttpHeaders  header = new HttpHeaders();
+		HttpHeaders header = new HttpHeaders();
 		header.add("X-Correlating-OperationId", request.getId());
 		System.out.println("End Processing sending response :" + response);
-		return new ResponseEntity<SkypeResponse>(response,header, HttpStatus.OK);
+		try {
+			RestTemplate restTemplate = new RestTemplate();
+			restTemplate.postForObject("https://smba.trafficmanager.net/apis/", response, String.class);
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.err.println(e);
+		}
+		// return new ResponseEntity<SkypeResponse>(response,header, HttpStatus.OK);
 
 	}
 
